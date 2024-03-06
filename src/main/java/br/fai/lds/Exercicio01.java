@@ -10,7 +10,7 @@ public class Exercicio01 {
         app.start();
     }
 
-    private void start() {
+    void start() {
         List<String> lista = new ArrayList<>();
 
 
