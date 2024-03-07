@@ -1,15 +1,18 @@
 package br.fai.lds.ex03.models;
 
 public class Cachorro  extends Animal{
-    public Cachorro() {
-        setId(2);
-        setIdade(10);
-        setNome("aroldo");
-        String nome = getNome();
-        System.out.println("Nome do cachorro: " + nome);
+
+    public Cachorro(String nome){
+        setNome(nome);
 
     }
-    public Cachorro(String nomeDoCachorro){
-        setNome(nomeDoCachorro);
+
+    @Override
+    public void som() {
+        System.out.println("Eu gosto de latir");
+    }
+
+    public void oQueGostoDeFazer(){
+        System.out.println("Gosto de morder carteiros");
     }
 }

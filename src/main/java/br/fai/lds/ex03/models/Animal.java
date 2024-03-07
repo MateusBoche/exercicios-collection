@@ -1,21 +1,32 @@
 package br.fai.lds.ex03.models;
 
 public abstract class  Animal {
+    private String cor = "preto";
+    private int idade = 5;
+    private String nome = "não definido";
 
-    private int id;
-    private String nome;
-    private int idade;
 
-    public int getId() {
-        return id;
+
+    public  void som(){
+        System.out.println("Este é o som padrão de um animal: zzzz");
+    }
+    public void dizerMeuNome(){
+        System.out.println("Nome do animal: xxx");
+    }
+    private void dizerMinhaIdade(){
+        System.out.println("Minha idade é: xxx");
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
     }
 
     public String getNome() {
-        return nome + " | " + id;
+        return nome;
     }
 
     public void setNome(String nome) {
@@ -25,8 +36,5 @@ public abstract class  Animal {
     public int getIdade() {
         return idade;
     }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
 }
+
