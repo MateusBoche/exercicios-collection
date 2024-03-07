@@ -64,6 +64,28 @@ public class Exercicio03 {
 
         }
 
+        List<Animal>animais = new ArrayList<>();
+        animais.add(primeiroCachorro);
+        animais.add(segundoCachorro);
+        animais.add(primeiroGato);
+        animais.add(segundoGato);
+
+
+        for (Animal animal:animais){
+            animal.som();
+            animal.dizerMeuNome();
+
+            if(animal instanceof Cachorro){
+                Cachorro cachorro = (Cachorro) animal;
+                cachorro.oQueGostoDeFazer();
+            } else if (animal instanceof Gato) {
+                Gato gato = (Gato) animal;
+                gato.oQuefacoDuranteANoite();
+
+
+            }
+        }
+
 
     }
 
